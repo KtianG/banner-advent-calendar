@@ -1,21 +1,21 @@
 {
-  "name": "basic-parcel-template",
+  "name": "banner-advent-calendar",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://KtianG.github.io/basic-parcel-template",
+  "homepage": "https://KtianG.github.io/banner-advent-calendar",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /basic-parcel-template/"
+    "build": "parcel build src/*.html --public-url /banner-advent-calendar/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KtianG/basic-parcel-template.git"
+    "url": "git+https://github.com/KtianG/banner-advent-calendar.git"
   },
   "keywords": [],
   "author": "Krystian Guz <krystian.guz@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KtianG/basic-parcel-template/issues"
+    "url": "https://github.com/KtianG/banner-advent-calendar/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
