@@ -1,0 +1,17 @@
+.advent-calendar-banner__big_grid{
+    z-index: 9999;
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 10px;
+
+}
+
+.advent-calendar-banner__small_grid{
+    display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+}
