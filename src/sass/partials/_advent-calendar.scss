@@ -1,17 +1,71 @@
-.advent-calendar-banner__big_grid{
-    z-index: 9999;
-    display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 10px;
-
+.advent-calendar-banner__big_grid {
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
 }
 
-.advent-calendar-banner__small_grid{
-    display: grid;
-grid-template-columns: repeat(6, 1fr);
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 5px;
-grid-row-gap: 5px;
+.advent-calendar-banner__small_grid {
+  display: grid;
+  z-index: 3;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.advent-calendar-banner__present {
+  list-style: none;
+}
+
+.advent-calendar-banner__present:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.advent-calendar-banner__present-image {
+  width: 50px;
+  height: 50px;
+}
+
+.advent-calendar-banner__present-image:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
