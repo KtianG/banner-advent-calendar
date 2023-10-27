@@ -1,5 +1,15 @@
-.advent-calendar-banner__description{
-    z-index: 3;
-    color: red;
-    
+@font-face {
+  font-family: christmas;
+  src: url(../fonts/ChopinScript.ttf);
+}
+
+.advent-calendar-banner__description {
+  z-index: 3;
+}
+
+.advent-calendar-banner__text {
+  font-weight: 300;
+  font-size: 1.7em;
+  color: white;
+  font-family: christmas;
 }
