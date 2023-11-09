@@ -8,26 +8,30 @@
 
   display: flex;
   flex-direction: column;
-  flex-flow: center;
+  justify-content: end;
   margin: 0;
+  max-width: 600px;
 }
 
 .advent-calendar-banner__text {
+  padding-left: 10px;
   font-weight: 300;
   font-size: 2.5em;
   color: white;
   font-family: christmas;
+  text-wrap: balance;
+  text-align: center;
 
-  background: #ffeeee; /* fallback for old browsers */
+  background: #ff6769; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #ddefbb,
-    #ffeeee
+    white,
+    white
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #ddefbb,
-    #ffeeee
+    white,
+    white
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   background-clip: text;
