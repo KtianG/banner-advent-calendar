@@ -1,6 +1,6 @@
 @font-face {
   font-family: christmas;
-  src: url(../fonts/christmas.ttf);
+  src: url(../fonts/christmas.otf);
 }
 
 .advent-calendar-banner__description {
@@ -15,8 +15,8 @@
 
 .advent-calendar-banner__text {
   padding-left: 10px;
-  font-weight: 300;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 2em;
   color: white;
   font-family: christmas;
   text-wrap: balance;
@@ -36,4 +36,16 @@
 
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .advent-calendar-banner__description {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+@media (max-width: 760px) {
+}
+
+@media (max-width: 580px) {
 }
