@@ -11,33 +11,44 @@
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  max-width: 1600px;
+  max-width: 1200px;
 
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 .advent-calendar-banner__small_grid {
   display: grid;
   z-index: 3;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 5px;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+  grid-column-gap: 10px;
   grid-row-gap: 10px;
 
-  color: white;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  background-color: rgba(255, 103, 105, 0);
+
+  border-radius: 5px;
+  aspect-ratio: 1/1;
 
   padding: 0;
 }
 
 .advent-calendar-banner__present {
   position: relative;
-  border-radius: 3px;
+  border-radius: 5px;
   list-style: none;
   text-align: center;
+
+  background-color: #ffe9dc;
+  box-shadow: 2px 2px 1px 2px rgba(195, 0, 4, 1);
 }
 
 .advent-calendar-banner__present:hover {
   cursor: pointer;
+  scale: 1.03;
+  transition: scale 250ms ease-out;
 }
 
 .advent-calendar-banner__link {
@@ -45,9 +56,9 @@
   flex-direction: column;
   align-items: center;
 
-  font-size: 1.2em;
+  font-size: 1.8em;
   text-decoration: none;
-  color: white;
+  color: #c30004;
   font-family: christmas-second;
   text-align: center;
 }
@@ -55,6 +66,7 @@
 .advent-calendar-banner__day {
   text-align: center;
   display: inline-block;
+  font-weight: 700;
 }
 
 .advent-calendar-banner__present-image {
@@ -72,17 +84,15 @@
 }
 
 @media (max-width: 1200px) {
+  .advent-calendar-banner__big_grid {
+    max-width: 800px;
+  }
   .advent-calendar-banner__small_grid {
     display: grid;
     z-index: 3;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
-
-    color: white;
-
-    padding: 0;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 80px);
+    aspect-ratio: 4/6;
   }
 }
 
@@ -90,20 +100,16 @@
   .advent-calendar-banner__big_grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
+
     max-width: 1600px;
 
     padding: 20px;
   }
 
   .advent-calendar-banner__small_grid {
-    display: grid;
-    z-index: 3;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
+    aspect-ratio: 6/4;
 
     color: white;
 
@@ -113,12 +119,9 @@
 
 @media (max-width: 580px) {
   .advent-calendar-banner__small_grid {
-    display: grid;
-    z-index: 3;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
+    aspect-ratio: 4/6;
 
     color: white;
 
