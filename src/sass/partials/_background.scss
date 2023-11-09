@@ -1,13 +1,9 @@
 // The CSS
 .advent-calendar-banner {
   height: 100%;
-  background-color: #9ddad3;
+  background-color: #c10001;
   background: url('../images/Christmas_7.jpg'),
-    linear-gradient(
-      #9ddad3 0%,
-      rgba(136, 218, 211, 1) 29%,
-      rgba(136, 218, 211, 1) 100%
-    );
+    linear-gradient(#c10001 0%, #c10001 29%, #c10001 100%);
   background-position: center;
 
   background-repeat: no-repeat;
