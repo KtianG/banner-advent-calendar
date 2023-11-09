@@ -110,6 +110,10 @@
       grid-area: 1 / 3 / 2 / 4;
     }
   }
+
+  .advent-calendar-banner__link {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 760px) {
@@ -119,8 +123,8 @@
   }
 
   .advent-calendar-banner__small_grid {
-    grid-template-columns: repeat(6, 60px);
-    grid-template-rows: repeat(4, 60px);
+    grid-template-columns: repeat(6, 90px);
+    grid-template-rows: repeat(4, 90px);
     aspect-ratio: 6/4;
 
     color: white;
@@ -129,15 +133,19 @@
   }
 
   .advent-calendar-banner__present-image {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .advent-calendar-banner__link {
+    font-size: 1.2em;
   }
 }
 
 @media (max-width: 580px) {
   .advent-calendar-banner__small_grid {
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(6, 50px);
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(6, 70px);
     aspect-ratio: 4/6;
 
     color: white;
@@ -147,8 +155,8 @@
 
   .advent-calendar-banner__present-image {
     border-radius: 25%;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
   }
 }
