@@ -52,8 +52,9 @@
 .advent-calendar-banner__present:hover {
   cursor: pointer;
   scale: 1.03;
-  transition: scale 250ms ease-out;
   box-shadow: 3px 3px 2px 3px rgba(195, 0, 4, 1);
+  transition-property: scale, box-shadow;
+  transition: 250ms ease-out;
 }
 
 .advent-calendar-banner__link {
