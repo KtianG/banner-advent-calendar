@@ -48,6 +48,9 @@
 }
 
 @media (max-width: 760px) {
+  .advent-calendar-banner__description {
+    display: none;
+  }
 }
 
 @media (max-width: 580px) {
