@@ -4,6 +4,7 @@
   font-family: Arial, sans-serif;
   text-shadow: 0 0 5px #000;
   z-index: 1;
+  overflow: hidden;
 }
 
 @-webkit-keyframes snowflakes-fall {
@@ -45,7 +46,7 @@
 .snowflake {
   position: fixed;
   top: -10%;
-  z-index: 9999;
+  z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -61,6 +62,7 @@
   animation-timing-function: linear, ease-in-out;
   animation-iteration-count: infinite, infinite;
   animation-play-state: running, running;
+  overflow: hidden;
 }
 .snowflake:nth-of-type(0) {
   left: 1%;
