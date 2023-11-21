@@ -13,7 +13,6 @@ const generateNumber = () => {
 const generateCalendar = () => {
   const date = new Date();
   const day = date.getDate();
-  console.log(day);
 
   let calendar = '';
 
