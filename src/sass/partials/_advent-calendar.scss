@@ -87,10 +87,13 @@
 }
 
 .advent-calendar-banner__present:hover .advent-calendar-banner__present-image {
-  animation: shake 1s;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.1);
   cursor: pointer;
+}
+
+.animated_shake:hover .advent-calendar-banner__present-image {
+  animation: shake 1s;
 }
 
 @media (max-width: 1200px) {

@@ -35,7 +35,7 @@ const generateCalendar = () => {
     }
 
     if (i === day) {
-      temp = `<li class="advent-calendar-banner__present">
+      temp = `<li class="advent-calendar-banner__present animated_shake">
         <a
           class="advent-calendar-banner__link"
           href="https://wjactv.com/resources/media/0c6a69d2-b5e5-4213-9aa4-5480db841760-momo2.PNG"
@@ -52,7 +52,7 @@ const generateCalendar = () => {
 
     if (i > day) {
       const number = generateNumber();
-      temp = `<li class="advent-calendar-banner__present">
+      temp = `<li class="advent-calendar-banner__present animated_shake">
           <a
             class="advent-calendar-banner__link"
           >
