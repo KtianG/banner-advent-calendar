@@ -2,6 +2,14 @@ const advent_calendar = document.querySelector(
   '.advent-calendar-banner__small_grid'
 );
 
+const urls = [
+  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
+  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
+  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
+  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
+  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
+];
+
 const generateNumber = () => {
   let number = Math.ceil(Math.random() * 10);
   if (number === 10) {
@@ -12,7 +20,7 @@ const generateNumber = () => {
 
 const generateCalendar = () => {
   const date = new Date();
-  const day = date.getDate();
+  const day = 1;
 
   let calendar = '';
 
@@ -37,7 +45,7 @@ const generateCalendar = () => {
       temp = `<li class="advent-calendar-banner__present animated_shake">
         <a
           class="advent-calendar-banner__link"
-          href="https://wjactv.com/resources/media/0c6a69d2-b5e5-4213-9aa4-5480db841760-momo2.PNG"
+          href="${urls[day]}"
 
         >
           <div class="advent-calendar-banner__day">${i}</div>

@@ -1,13 +1,21 @@
 // The CSS
 .advent-calendar-banner {
   position: relative;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
+
   background-color: #c10001;
-  background: url('../images/Christmas_7.jpg'),
+  background: url('https://damizabawki.pl/data/include/cms/advent-calendar/images/Christmas_7.jpg'),
     linear-gradient(#c10001 0%, #c10001 29%, #c10001 100%);
   background-position: center;
 
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-y: 0px;
+}
+
+@media (max-width: 580px) {
+  .advent-calendar-banner {
+    aspect-ratio: 514 / 576;
+  }
 }
