@@ -3,6 +3,9 @@
   position: relative;
   width: 100%;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   background-color: #c10001;
   background: url('https://damizabawki.pl/data/include/cms/advent-calendar/images/Christmas_7.jpg'),
@@ -12,6 +15,12 @@
   background-repeat: no-repeat;
   overflow: hidden;
   background-position-y: 0px;
+}
+
+@media (min-width: 1480px) {
+  .advent-calendar-banner {
+    aspect-ratio: 192 / 79;
+  }
 }
 
 @media (max-width: 580px) {

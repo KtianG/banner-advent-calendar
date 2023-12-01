@@ -4,10 +4,11 @@ const advent_calendar = document.querySelector(
 
 const urls = [
   'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
-  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
-  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
-  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
-  'https://damizabawki.pl/product-pol-48432-Hasbro-Ciastolina-Play-Doh-Teczowe-Przyjecie.html',
+  'https://damizabawki.pl/product-pol-48634-Monopoly-Spider-Man-Wersja-Polska-Edycja-Kolekcjonerska.html',
+  'https://damizabawki.pl/product-pol-46200-Sambro-Pluszowa-Figurka-Spider-Man-Marvel-38-cm.html',
+  'https://damizabawki.pl/product-pol-48381-Miraculous-Figurka-12cm-Biedronka-Marinette.html',
+  'https://damizabawki.pl/product-pol-48447-Hasbro-My-Little-Pony-Grajaca-Figurka-Izy-Moonbow.html',
+  'https://damizabawki.pl/product-pol-48689-Lalka-Bobas-My-Baby-Garden-Biedronka-Interaktywna-Rozowa.html',
 ];
 
 const generateNumber = () => {
@@ -20,7 +21,7 @@ const generateNumber = () => {
 
 const generateCalendar = () => {
   const date = new Date();
-  const day = 1;
+  const day = date.getDate();
 
   let calendar = '';
 
@@ -45,7 +46,7 @@ const generateCalendar = () => {
       temp = `<li class="advent-calendar-banner__present animated_shake">
         <a
           class="advent-calendar-banner__link"
-          href="${urls[day]}"
+          href="${urls[day - 1]}"
 
         >
           <div class="advent-calendar-banner__day">${i}</div>
